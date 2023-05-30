@@ -1,0 +1,313 @@
+.sign-up-container {
+    width: 100%;
+    display: flex;
+    overflow: auto;
+    min-height: 100vh;
+    align-items: center;
+    flex-direction: column;
+  }
+  .home-container {
+    width: auto;
+    display: flex;
+    overflow: auto;
+    box-shadow: 5px 5px 10px 0px #d4d4d4;
+    min-height: 100vh;
+    align-items: center;
+    border-color: #909090;
+    border-width: 1px;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #D9D9D9;
+  }
+
+  .sign-up-header {
+    width: 100%;
+    height: 73px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    padding-top: 1px;
+    border-color: #000000;
+    border-width: 1px;
+    padding-left: 10px;
+    padding-bottom: 1px;
+    justify-content: space-between;
+    background-color: #080c44;
+  }
+  .sign-up-container1 {
+    flex: 0 0 auto;
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: space-between;
+    flex-direction: column;
+  }
+  .sign-up-image {
+    width: 88px;
+    height: 63px;
+    object-fit: cover;
+  }
+  .sign-up-container2 {
+    top: 10px;
+    flex: 0 0 auto;
+    right: 11px;
+    width: 266px;
+    height: 48px;
+    margin: auto;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+  }
+  .sign-up-button {
+  top: 9px;
+  right: 1px;
+  width: 81px;
+  height: 34px;
+  display: flex;
+  position: absolute;
+  font-size: 10px;
+  padding-top: 0px;
+  border-style: solid;
+  padding-left: 12px;
+  border-radius: 9px;
+  background-color: #e2d3d3;
+  }
+  .sign-up-text {
+    top: 10px;
+    left: 24px;
+    margin: auto;
+    position: absolute;
+    font-style: normal;
+    font-weight: 700;
+  }
+  .sign-up-button1 {
+    right: 84px;
+  width: 81px;
+  bottom: 5px;
+  height: 34px;
+  display: flex;
+  position: absolute;
+  font-size: 10px;
+  padding-top: 0px;
+  border-style: solid;
+  padding-left: 12px;
+  border-radius: 9px;
+  background-color: #e2d3d3;
+  }
+  .sign-up-text1 {
+    top: 10px;
+    left: 22px;
+    margin: auto;
+    position: absolute;
+    font-style: normal;
+    font-weight: 700;
+  }
+  .sign-up-button2 {
+    top: 9px;
+  left: 18px;
+  width: 81px;
+  height: 34px;
+  display: flex;
+  position: absolute;
+  font-size: 10px;
+  padding-top: 0px;
+  border-style: solid;
+  padding-left: 12px;
+  border-radius: 9px;
+  background-color: #e2d3d3;
+  }
+  .sign-up-text2 {
+    top: 10px;
+    left: 5px;
+    margin: auto;
+    position: absolute;
+    font-style: normal;
+    font-weight: 700;
+  }
+  .sign-up-container3 {
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  width: 438px;
+  bottom: 0px;
+  height: 540px;
+  margin: auto;
+  display: flex;
+  position: absolute;
+  box-shadow: 5px 5px 8px 0px #b2b2b3;
+  align-items: center;
+  border-color: #a7a4a4;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 9px;
+  padding-right: var(--dl-space-space-unit);
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: #ffffff;
+  }
+  .sign-up-login-into-secura {
+    top: 33px;
+  left: 0px;
+  color: #0a3fa8;
+  font-size: 30px;
+  right: 0px;
+  margin: auto;
+  position: absolute;
+  font-style:normal;
+  text-align: center;
+  font-weight: 20;
+  }
+  .sign-up-input {
+  top: 110px;
+  left: 0px;
+  right: 0px;
+  width: 285px;
+  height: 40px;
+  margin: auto;
+  position: absolute;
+  border-color: #0441c5;
+  padding-left: 26px;
+  border-radius: 10px;
+  padding-right: 9px;
+  border-bottom-width: 5px;
+  }
+  .sign-up-input4 {
+    top: 185px;
+    left: 0px;
+    right: 0px;
+    width: 289px;
+    height: 40px;
+    margin: auto;
+    position: absolute;
+    border-color: #0441c5;
+    padding-left: 26px;
+    border-radius: 10px;
+    border-bottom-width: 5px;
+  }
+  .sign-up-input2 {
+    top: 330px;
+    left: 0px;
+    right: 0px;
+    width: 285px;
+    height: 40px;
+    margin: auto;
+    position: absolute;
+    border-color: #0441c5;
+    padding-left: 26px;
+    border-radius: 10px;
+    padding-right: 9px;
+    border-bottom-width: 5px;
+  } 
+  
+  .sign-up-input1 {
+    top: 260px;
+    left: 0px;
+    right: 0px;
+    width: 285px;
+    height: 40px;
+    margin: auto;
+    position: absolute;
+    border-color: #0441c5;
+    padding-left: 26px;
+    border-radius: 10px;
+    padding-right: 9px;
+    border-bottom-width: 5px;
+  }
+  .sign-up-input3 {
+    top: 405px;
+    left: 0px;
+    right: 0px;
+    width: 285px;
+    height: 40px;
+    margin: auto;
+    position: absolute;
+    border-color: #0441c5;
+    padding-left: 26px;
+    border-radius: 10px;
+    padding-right: 9px;
+    border-bottom-width: 5px;
+  }
+  
+  .sign-up-buttonlogin {
+    left: 0px;
+    top: 490px;
+    right: 0px;
+    color: rgb(243, 240, 240);
+    width: 101px;
+    bottom: 52px;
+    height: 38px;
+    margin: auto;
+    position: absolute;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    border-color: #060472;
+    border-radius: 8px;
+    padding-right: 0px;
+    background-color: rgb(47, 98, 199);
+  }
+
+  .sign-up-textfirst-name {
+    top: 91px;
+    left: 61px;
+    color: #7f7f7f;
+    position: absolute;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    text-transform: capitalize;
+  }
+
+  .sign-up-textpassword {
+    top: 165px;
+    left: 61px;
+    color: rgb(138, 138, 138);
+    position: absolute;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    text-transform: capitalize
+  }
+  .sign-up-textpassword1 {
+    top: 313px;
+    left: 60px;
+    color: rgb(138, 138, 138);
+    position: absolute;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    text-transform: capitalize;
+  }
+  .sign-up-textpassword2 {
+    top: 387px;
+    left: 60px;
+    color: rgb(138, 138, 138);
+    position: absolute;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    text-transform: capitalize;
+  }
+  .sign-up-textpassword3 {
+    top: 240px;
+    left: 60px;
+    color: rgb(138, 138, 138);
+    position: absolute;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    text-transform: capitalize;
+  }
+  @media(max-width: 767px) {
+    .sign-up-header {
+      padding-left: var(--dl-space-space-twounits);
+      padding-right: var(--dl-space-space-twounits);
+    }
+  }
+  @media(max-width: 479px) {
+    .sign-up-header {
+      padding: var(--dl-space-space-unit);
+    }
+  }
+  
