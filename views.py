@@ -41,7 +41,7 @@ def data(ip):
         while i < len(a):
             masscan(port=a[i], type=b[i]).save()
             i += 1
-        #формирование правильного формата мписка номеров портов
+        #формирование правильного формата cписка номеров портов
         A = ",".join(a)
         #сканирование портов с помощью nmap
         subprocess.call(f"nmap -O --osscan-guess -T5 -sS --script-args vulscanshowll=1 -sV -p {A} {ip}", shell=True, stdout=rep)
