@@ -18,7 +18,7 @@ def data(ip):
         rep = open("/home/seed/Desktop/scan/main/report.txt", "w")
         file = open("/home/seed/Desktop/scan/main/rep.txt", "w")
         #использование команды для сканирования и записывание результата в файл
-        subprocess.call(f"masscan -p 1-65535 --wait=1  {ip}", shell=True, stdout=file)
+        subprocess.call(f"masscan -p 1-65535 --wait=1 --rate=2000  {ip}", shell=True, stdout=file)
 
         #выборка данных - получение типов портов
         typess = subprocess.run(
@@ -44,7 +44,7 @@ def data(ip):
         #формирование правильного формата мписка номеров портов
         A = ",".join(a)
         #сканирование портов с помощью nmap
-        subprocess.call(f"nmap -sV -p {A} {ip}", shell=True, stdout=rep)
+        subprocess.call(f"nmap -O --osscan-guess -T5 -sS --script-args vulscanshowll=1 -sV -p {A} {ip}", shell=True, stdout=rep)
 
         a.clear()
         b.clear()
