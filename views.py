@@ -13,17 +13,20 @@ def check():
     return a
 
 def data(ip):
-
+#функция для сканирования портов
     def scan():
         rep = open("/home/seed/Desktop/scan/main/report.txt", "w")
         file = open("/home/seed/Desktop/scan/main/rep.txt", "w")
+        #использование команды для сканирования и записывание результата в файл
         subprocess.call(f"masscan -p 1-65535 --wait=1  {ip}", shell=True, stdout=file)
 
+        #выборка данных - получение типов портов
         typess = subprocess.run(
             "grep open /home/seed/Desktop/scan/main/rep.txt| awk '{print $4}'|cut -d '/' -f 2",
             shell=True, text=True, capture_output=True)
         b = typess.stdout.split('\n')
 
+        #выборка данных - получение номеров портов
         portss = subprocess.run(
             "grep open /home/seed/Desktop/scan/main/rep.txt| awk '{print $4}'|cut -d '/' -f 1",
             shell=True, text=True, capture_output=True)
@@ -32,13 +35,15 @@ def data(ip):
         a.pop()
         b.pop()
 
+        #заполнение базы данных masscan
         i = 0
         masscan(ip=ip).save()
         while i < len(a):
             masscan(port=a[i], type=b[i]).save()
             i += 1
-
+        #формирование правильного формата мписка номеров портов
         A = ",".join(a)
+        #сканирование портов с помощью nmap
         subprocess.call(f"nmap -sV -p {A} {ip}", shell=True, stdout=rep)
 
         a.clear()
