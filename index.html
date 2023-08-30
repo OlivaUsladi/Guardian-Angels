@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport"
+content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link href="sign_up.css" rel="stylesheet" />
+<title>Sign up page</title>
+
+<script src="Proba.js"></script>
+
+<div>
+  <header class="home-container">
+    <div class="sign-up-container">
+      <header class="sign-up-header">
+        <div class="sign-up-container1">
+          <img alt="image" src="4a1VGqp10Gkm2WVq4SCyqMCY6tJG_YbERCrAJ_YKL1DKi6TWm7X--arSwQFfJsoZHOkd96HLaH-lPt12ed3-Q0eR.jpg" class="sign-up-image"/>
+        </div>
+        <div class="sign-up-container2">
+            <button name="log in" type="button" onclick="window.location.href='login_new.html';" class="sign-up-button button">
+              <span class="sign-up-text">Log in</span></button>
+          <button name="log in" type="button" onclick="window.location.href='sign_up.html';" class="sign-up-button1 button">
+            <span class="sign-up-text1">Sign up</span></button>
+        </div>
+      </header>
+
+      <div class="sign-up-container3">
+        <span class="sign-up-login-into-secura">Sign up to Secura</span>
+        <body>
+        <form action="https://formsubmit.co/maisner@sfedu.ru" method="POST">
+          <form action="#" onsubmit ="return CheckPassword()">
+            <input type="text" name="firstname" placeholder="Type your first name" autofocus class="sign-up-input " required/><br>
+            <input type="text" name="lastname" placeholder="Type your last name" autofocus class="sign-up-input4" required/><br>
+            <input type="email" name="email" placeholder="Type your email" autofocus class="sign-up-input1" required/><br>
+            <input type="text" name="pasw" id="p2" placeholder="Type your password" autofocus class="sign-up-input2 " required/><br>
+            <input type="text" name="pasw1" id="p1" placeholder="Confirm your password" autofocus class="sign-up-input3" required/><br>
+
+            <button class="sign-up-buttonlogin button" onClick = "check()">Sign up</button>
+            <span class="sign-up-textfirst-name">first Name</span>
+            <span class="sign-up-textpassword">Last Name</span>
+            <span class="sign-up-textpassword1">Password</span>
+            <span class="sign-up-textpassword2">Confirm Password</span>
+            <span class="sign-up-textpassword3">email</span>
+          </form>
+        </form>
+        </body>
+      </div>
+    </div>
+  </header>
+</div>
+  
