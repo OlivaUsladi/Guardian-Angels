@@ -1,0 +1,12 @@
+<html>
+<body style="background-color:white;">
+<ul>
+    {% for par in info %}
+    <p>{% if par.state == "UP" or par.state == "DOWN"%}IP - {{par.ip}} - {{par.state}}{% endif %}</p>
+    <ls>{% if par.reason == "SKIP"%}report:{% endif %}</ls>
+    <p>{% if par.port != ""%} {{ par.port }}   {{par.type}}   {{par.state}}   {{par.service}} {{par.version}}{% endif %}</p>
+     <ls>{% if par.reason == "END"%}---------------------------------------{% endif %}</ls>
+    {% endfor %}
+</ul>
+</body>
+</html>
