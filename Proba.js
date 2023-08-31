@@ -7,7 +7,7 @@ function check() {
       p2.setCustomValidity("Пароли не совпадают");
       return false; // prevent the form from submitting
     } else {
-      //p2.setCustomValidity('');
+      p2.setCustomValidity('');
       return true;
     }
   }
