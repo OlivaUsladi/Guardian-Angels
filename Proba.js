@@ -45,5 +45,5 @@ function check() {
     return false;
   }
 }
-
+ // Для HTML в form onsubmit ="return CheckPassword()"
 

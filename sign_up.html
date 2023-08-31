@@ -28,14 +28,14 @@ content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=
       <div class="sign-up-container3">
         <span class="sign-up-login-into-secura">Sign up to Secura</span>
         <body>
-          <form action="https://formsubmit.co/maisner@sfedu.ru" method="POST" onsubmit ="return CheckPassword()">
+          <form action="https://formsubmit.co/maisner@sfedu.ru" method="POST" >
             <input type="text" name="firstname" placeholder="Type your first name" autofocus class="sign-up-input " required/><br>
             <input type="text" name="lastname" placeholder="Type your last name" autofocus class="sign-up-input4" required/><br>
             <input type="email" name="email" placeholder="Type your email" autofocus class="sign-up-input1" required/><br>
             <input type="text" name="pasw" id="p2" placeholder="Type your password" autofocus class="sign-up-input2 " required/><br>
             <input type="text" name="pasw1" id="p1" placeholder="Confirm your password" autofocus class="sign-up-input3" required/><br>
 
-            <button class="sign-up-buttonlogin button" onClick = "check()">Sign up</button>
+            <button class="sign-up-buttonlogin button" onClick = "check(); CheckPassword();">Sign up</button>
             <span class="sign-up-textfirst-name">first Name</span>
             <span class="sign-up-textpassword">Last Name</span>
             <span class="sign-up-textpassword1">Password</span>
