@@ -16,7 +16,7 @@ function check() {
   function CheckPassword() 
 { 
   let p1 = document.getElementById("p1");  
-  if(p1.value.length < 8 && p1.value.length>20 ) {
+  /*if(p1.value.length < 8 && p1.value.length>20 ) {
 
     p1.setCustomValidity("Пароль должен содержать от 8 до 20 символов");
     //Выводит внизу формы, а должен как уведомление в строке (set.CustomValidity), но НЕ РАБОТАЕТ
@@ -27,11 +27,14 @@ function check() {
 
   }    
   else{
+    p1.setCustomValidity('');
     return true;
-  }
-  /*let pasw = /(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$/;
+    
+  }*/
+  let pasw = /(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$/;
   if(p1.value.match(pasw)) { 
     console.log('Cработало');
+    p1.setCustomValidity('');
     return true;
     
   }
@@ -40,7 +43,7 @@ function check() {
     p1.setCustomValidity("Пароль должен содержать как минимум одну цифру, одну заглавную и одну строчную букву и быть длиной от 8 до 20 символов");
     console.log('Работай, падла');
     return false;
-  }*/
+  }
 }
 
 
