@@ -1,5 +1,5 @@
 # USAGE
-Extract the **test** programm to your **home directory  /home/<username>** 
+Extract the **test** programm to your **home directory  /home/(username)** 
 
 Download the **scan.sh** into the **same directory**
 
