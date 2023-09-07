@@ -6,6 +6,7 @@
     align-items: center;
     flex-direction: column;
   }
+  
   .home-container {
     width: auto;
     display: flex;
@@ -74,15 +75,15 @@
   background-color: #e2d3d3;
   }
   .sign-up-text {
-    top: 10px;
-    left: 24px;
-    margin: auto;
-    position: absolute;
-    font-style: normal;
-    font-weight: 700;
+  top: 8px;
+  left: 24px;
+  margin: auto;
+  position: absolute;
+  font-style: normal;
+  font-weight: 700;
   }
   .sign-up-button1 {
-    right: 84px;
+  right: 84px;
   width: 81px;
   bottom: 5px;
   height: 34px;
@@ -96,15 +97,15 @@
   background-color: #e2d3d3;
   }
   .sign-up-text1 {
-    top: 10px;
-    left: 22px;
-    margin: auto;
-    position: absolute;
-    font-style: normal;
-    font-weight: 700;
+  top: 8px;
+  left: 22px;
+  margin: auto;
+  position: absolute;
+  font-style: normal;
+  font-weight: 700;
   }
   .sign-up-button2 {
-    top: 9px;
+  top: 9px;
   left: 18px;
   width: 81px;
   height: 34px;
@@ -118,8 +119,8 @@
   background-color: #e2d3d3;
   }
   .sign-up-text2 {
-    top: 10px;
-    left: 5px;
+    top: 8px;
+    left: 50px;
     margin: auto;
     position: absolute;
     font-style: normal;
@@ -147,7 +148,7 @@
   background-color: #ffffff;
   }
   .sign-up-login-into-secura {
-    top: 33px;
+  top: 33px;
   left: 0px;
   color: #0a3fa8;
   font-size: 30px;
@@ -156,7 +157,7 @@
   position: absolute;
   font-style:normal;
   text-align: center;
-  font-weight: 20;
+  font-weight: 20px;
   }
   .sign-up-input {
   top: 110px;
@@ -249,8 +250,8 @@
   }
 
   .sign-up-textfirst-name {
-    top: 91px;
-    left: 61px;
+    top: 89px;
+    left: 78px;
     color: #7f7f7f;
     position: absolute;
     font-size: 15px;
@@ -260,8 +261,8 @@
   }
 
   .sign-up-textpassword {
-    top: 165px;
-    left: 61px;
+    top: 163px;
+    left: 78px;
     color: rgb(138, 138, 138);
     position: absolute;
     font-size: 15px;
@@ -270,8 +271,8 @@
     text-transform: capitalize
   }
   .sign-up-textpassword1 {
-    top: 313px;
-    left: 60px;
+    top: 309px;
+    left: 78px;
     color: rgb(138, 138, 138);
     position: absolute;
     font-size: 15px;
@@ -280,8 +281,8 @@
     text-transform: capitalize;
   }
   .sign-up-textpassword2 {
-    top: 387px;
-    left: 60px;
+    top: 383px;
+    left: 78px;
     color: rgb(138, 138, 138);
     position: absolute;
     font-size: 15px;
@@ -290,8 +291,8 @@
     text-transform: capitalize;
   }
   .sign-up-textpassword3 {
-    top: 240px;
-    left: 60px;
+    top: 238px;
+    left: 78px;
     color: rgb(138, 138, 138);
     position: absolute;
     font-size: 15px;
