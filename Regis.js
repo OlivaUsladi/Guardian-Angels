@@ -18,7 +18,7 @@ function createID(users){
     return Object.keys(users).length;
 }
 
-submit.addEventListener('click', () => {
+submit.addEventListener("click", () => {
     const fnameUser = fname.value;
     const lnameUser = lname.value;
     const emailUser = email.value;
