@@ -114,7 +114,7 @@ for ip in ips:
 		search('auxiliary',serv)
 		brute(ip,serv)
 
-
+ipf.close()
 
 #child = pexpect.spawn('/usr/share/metasploit-framework/msfconsole')
 
