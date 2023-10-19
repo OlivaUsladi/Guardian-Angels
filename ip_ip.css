@@ -1,0 +1,406 @@
+.page-container 
+{
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  background-color: #000000;
+  font-family: 'Poppins', sans-serif;
+  
+}
+
+.page-header 
+{
+  width: 100%;
+  height: 73px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  border-bottom: 1px solid rgb(73, 71, 71);
+  padding-top: 1px;
+  padding-left: 10px;
+  padding-bottom: 1px;
+  justify-content: space-between;
+  background-color: #000000;
+}
+
+.star {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 2px;
+  background-color: white;
+  border-radius: 50%;
+  opacity: 0; /* Звезды изначально невидимы */
+  /*animation: twinkling 1s infinite; /* Анимация мерцания звезд */
+}
+
+@keyframes twinkling {
+  0% { opacity: 033; } /* Задаем начальную прозрачность для звезды, 0 - полностью прозрачная */
+  25% { opacity: 0,5; } /* Задаем половинное значение прозрачности для звезды, 1 - полностью непрозрачная */
+  50% { opacity: 1; } /* Задаем конечную прозрачность для звезды, 0 - полностью прозрачная */
+  75% { opacity: 0.5}
+  100% {opacity: 1}
+}
+
+.page-container1 
+{
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: space-between;
+  flex-direction: column;
+}
+
+.page-image 
+{
+  width: 88px;
+  height: 63px;
+  object-fit: cover;
+}
+
+/* Контейнер <div> - необходим для размещения выпадающего содержимого */
+.dropdown 
+{
+  position: relative;
+  display: inline-block;
+  margin-top: 22px;
+  color: #fff;
+  
+}
+
+nav ul 
+{
+  list-style: none;
+}
+
+nav ul li 
+{
+  display: inline-block;
+  position: relative;
+  width: 150px;
+  margin-top: 25px;
+  text-align: center;
+}
+
+nav ul li a 
+{
+  display: block;
+  padding: 10px 20px;
+  color: #333;
+  text-decoration: none;
+}
+
+nav ul li:hover > ul.dropdown-menu 
+{
+  display: block;
+}
+
+ul.dropdown-menu 
+{
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: transparent;
+  padding: 0;
+}
+
+ul.dropdown-menu li a 
+{
+  padding: 10px 20px;
+  color: #ffffffa9;
+
+}
+
+.page-container2 
+{
+  top: 0px;
+  left: 0px;
+  width: 654px;
+  bottom: 0px;
+  height: 451px;
+  margin: auto;
+  display: flex;
+  position: absolute;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  align-items: center;
+  margin-left: 720px;
+  border: 1px solid rgba(80, 78, 78, 0.363);
+  border-radius: 9px;
+  padding-right: var(--dl-space-space-unit);
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #2f323386;
+  animation: fade-in 1s ease-in-out;
+ 
+}
+
+@keyframes fade-in 
+{
+  0% 
+  {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% 
+  {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.hidden 
+{
+  opacity: 0;
+}
+
+.page-text 
+{
+  color: rgb(138, 138, 138);
+  font-size: 23px;
+  font-style: normal;
+  margin-top: 25px;
+  font-weight: 600;
+}
+
+.page-container3 
+{
+  width: 438px;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  height: 143px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.page-text1 
+{
+  color: rgb(138, 138, 138);
+  font-size: 12px;
+  font-style: normal;
+  margin-top: 10px;
+  font-weight: 600;
+  margin-right: 98px;
+  text-transform: lowercase;
+}
+
+.page-textinput 
+{
+  flex: 0 0 auto;
+  width: 240px;
+  height: 35px;
+  align-self: center;
+  margin-left: 160px;
+  margin-right: 145px;
+  border-radius: 8px;
+  margin-bottom: 1.5px;
+  background-color: #000000;
+  border: 1px solid rgba(97, 96, 96, 0.514);
+  color:#fff;
+}
+
+.btn
+{
+  color: #918a8a;
+  width: 120px;
+  height: 30px;
+  font-size: 14px;
+  font-weight: 570;
+  margin-left: 15px;
+  margin-top: 17px;
+  padding-bottom: 25px;
+  border-radius: 8px;
+  bottom: 25px;
+  width: 135px;
+  border-radius: 8px;
+  border: 1px solid rgb(132, 132, 134);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn:hover 
+  {
+    box-shadow: 1px 1px 25px 8px rgba(113, 39, 211, 0.418);
+  }
+  
+  .btn:before 
+  {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      120deg,
+      transparent,
+      rgb(113, 43, 226),
+      transparent
+    );
+    transition: all 650ms;
+  }
+  
+  .btn:hover:before 
+  {
+    left: 100%;
+  }
+
+.page-text2 
+{
+  color: rgb(138, 138, 138);
+  font-size: 16px;
+  font-style: normal;
+  text-align: center;
+  font-weight: 600;
+  text-transform: lowercase;
+}
+
+.page-text3 
+{
+  color: rgb(138, 138, 138);
+  font-size: 23px;
+  text-align: center;
+  font-style: normal;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+.page-container4 
+{
+  width: 543px;
+  height: 120px;
+  display: flex;
+  margin-top: 3px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+input[type="file"]::file-selector-button {
+  font-size: 16px;
+  color:rgba(255, 255, 255, 0.589);
+  border: 1px solid #ffffff8a;
+  padding: 0.1em 0.2em;
+  border-radius: 0.45em;
+  background-color: transparent;
+  transition: 1s;
+}
+
+input[type="file"]::file-selector-button:hover {
+  background-color: #6b24bd7c;
+  border: 2px solid #6b24bd85;
+}
+
+.page-text7 
+{
+  color: rgba(255, 255, 255, 0.589);
+  font-size: 12px;
+  font-style: normal;
+  margin-top: 10px;
+  font-weight: 600;
+  margin-right: 136px;
+  text-transform: lowercase;
+}
+
+.page-textinput1 
+{
+  flex: 0 0 auto;
+  width: 240px;
+  height: 35px;
+  align-self: center;
+  margin-left: 160px;
+  margin-right: 145px;
+  border-radius: 8px;
+  margin-bottom: 21px;
+}
+
+.btn1
+{
+  color: #918a8a;
+  font-size: 14px;
+  font-weight: 570;
+  margin-left: 15px;
+  width: 120px;
+  height: 30px;
+  border-radius: 8px;
+  border: 1px solid rgb(132, 132, 134);
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.btn1:hover 
+{
+  box-shadow: 1px 1px 25px 8px rgba(113, 39, 211, 0.418);
+}
+
+.btn1:before 
+{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgb(113, 43, 226),
+    transparent
+  );
+  transition: all 650ms;
+}
+
+.btn1:hover:before 
+{
+  left: 100%;
+}
+
+a
+{
+  color: inherit;
+  text-decoration: none;
+}
+
+a 
+{
+  background:
+    linear-gradient(
+      to right,
+      rgb(0, 0, 0),
+      rgba(0, 0, 0, 0.8)
+    ),
+    linear-gradient(
+      to right,
+      rgb(87, 10, 187),
+      rgb(231, 76, 185),
+      rgb(23, 3, 196)
+  );
+  background-size: 100% 3px, 0 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+}
+
+a:hover 
+{
+  background-size: 0 3px, 100% 3px;
+   transition: 1s;
+}
+
+
+
+ body {
+	
+ 
+	place-items: center;
+}
