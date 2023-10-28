@@ -113,6 +113,11 @@
   animation: fade-in 1s ease-in-out;
 }
 
+.button_link
+{
+  color:#fff;
+}
+
 @keyframes fade-in 
 {
   0% 
