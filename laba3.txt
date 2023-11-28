@@ -1,0 +1,83 @@
+#!/bin/bash
+
+# Выбор параметром запроса подтверждения для каждого файла
+# a - всегда | r - только при замене | n - никогда
+while getopts 'arn' klych; do
+  case "$klych" in
+    a)
+      reg=$klych
+      ;;
+    r)
+      reg=$klych
+      ;;
+    n)
+      reg=$klych
+      ;;
+    ?)
+      echo "Invalid option: $klych" 2>&1
+      exit 1
+      ;;
+  esac
+done
+
+shift 1
+# Запись в переменные
+pattern=$1
+input_dir=$2
+# Сдвиг параметров
+shift 2
+
+
+# Выдать ошибку если $reg пуст и подсказать какие ключи можно использовать
+if [ -z "$reg" ]; then
+  echo "Ошибка: не указан ключ запроса подтверждения" 2>&1
+  echo "Подсказка: '-a' - всегда | '-r' - только при замене | '-n' - никогда" 2>&1
+  exit 1
+fi
+
+
+# Проверка параметров на пустоту
+if [ -z "$pattern" ]  [ -z "$input_dir" ]  [ -z "$1" ]; then
+  echo "Ошибка: не указаны параметры" 2>&1
+  echo "Подсказка: <pattern> <input_dir> <output_dirs> ..." 2>&1
+  exit 1
+fi
+
+
+# Вывод параметров
+echo "Паттерн: $pattern"
+echo "Папка назначения: $input_dir"
+echo "Источники: $*"
+echo ""
+
+
+for output_dir in "$@"; do
+  echo "[/] Обработка папки: $output_dir"
+  for file in $output_dir/$pattern; do
+    echo "[\] Файл: $(basename "$file")"
+    # Запрос подтверждения для каждого файла
+    if [ "$reg" = "a" ]; then
+      # Пропуск файла если $reg = n или любой другой ответ кроме y
+      echo "Копировать этот файл? (y/N)"
+      read answer
+      if [ "$answer" = "y" ]; then
+        cp "$file" "$input_dir"
+      fi
+    # Проверка на существование файла в папке назначения и замена его по запросу
+    elif [ "$reg" = "r" ]; then
+      # Если файл существует в папке назначения спрашиваем пользователя нужно ли его перезаписать
+      if [ -f "$input_dir/$(basename "$file")" ]; then
+        # Пропуск файла если $reg = n или любой другой ответ кроме y
+        echo "Файл уже существует, заменить? (y/N)"
+        read answer
+        if [ "$answer" = "y" ]; then
+          cp "$file" "$input_dir"
+        fi
+      else
+        cp "$file" "$input_dir"
+      fi
+    elif [ "$reg" = "n" ]; then
+      cp "$file" "$input_dir"
+    fi
+  done
+done
